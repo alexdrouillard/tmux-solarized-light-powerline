@@ -1,0 +1,65 @@
+#
+# Powerline Blue - Tmux Theme
+# Created by Jim Myhrberg <contact@jimeh.me>.
+#
+# Inspired by vim-powerline: https://github.com/Lokaltog/powerline
+#
+# Requires terminal to be using a powerline compatible font, find one here:
+# https://github.com/Lokaltog/powerline-fonts
+#
+
+# Status update interval
+set -g status-interval 1
+
+# Basic status bar colors
+set-option -g status-style fg=yellow,bg=white,default#base2
+# Left side of status bar
+set -g status-left-style bg=colour8,fg=colour11
+set -g status-left-length 40
+set -g status-left "#[fg=colour0,bg=colour14] #S #[fg=colour14,bg=colour10]#[fg=colour0,bg=colour10] #(whoami) #[fg=colour10,bg=colour8]"
+
+# Right side of status bar
+set -g status-right-style bg=colour8,fg=colour11
+set -g status-right-length 150
+set -g status-right "#[fg=colour10,bg=colour8]#[fg=colour0,bg=colour10] %d-%b-%y #[fg=colour14,bg=colour10]#[fg=colour0,bg=colour14] #H "
+
+# Window status
+set -g window-status-format "  #I:#W#F  "
+set -g window-status-current-format "#[fg=colour8,bg=colour0]#[fg=colour10] #I:#W#F #[fg=colour8,bg=colour0]"
+
+# Current window status
+set -g window-status-current-style bg=colour0,fg=colour235
+
+# Window with activity status
+set -g window-status-activity-style bg=colour233,fg=colour245
+
+# Window separator
+set -g window-status-separator ""
+
+# Window status alignment
+set -g status-justify centre
+
+# Pane border
+set -g pane-border-style bg=colour8,fg=colour11
+
+# Active pane border
+set -g pane-active-border-style bg=colour8,fg=colour11
+
+# Pane number indicator
+set -g display-panes-colour colour11
+set -g display-panes-active-colour colour5
+
+# Clock mode
+set -g clock-mode-colour colour14
+set -g clock-mode-style 12
+
+# Message
+set-option -g message-style fg=colour14,bg=colour8 #base2
+
+# Command message
+set -g message-command-style bg=colour8,fg=colour14
+
+# Mode
+set -g mode-style bg=colour8,fg=colour14
+
+
