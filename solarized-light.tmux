@@ -81,5 +81,3 @@ set -g message-command-style bg="#fdf6e3",fg="#586e75"
 
 # Mode
 set -g mode-style bg="#fdf6e3",fg="#586e75"
-
-
